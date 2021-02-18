@@ -1,4 +1,6 @@
-/* Global Reset */
+/*----------              ----------*/
+/*---------- Global Reset ----------*/
+/*----------              ----------*/
 
 * {
   margin: 0;
@@ -6,7 +8,9 @@
   box-sizing: border-box;
 }
 
-/* Forgot their names */
+/*----------              ----------*/
+/*----------   Reusable   ----------*/
+/*----------              ----------*/
 
 html {
   background-color: #fff;
@@ -17,12 +21,29 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*----------              ----------*/
+/*---------- Header Style ----------*/
+/*----------              ----------*/
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/hero.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -36,20 +57,9 @@ h1 {
   word-spacing: 4px;
 }
 
-/* Classes */
-
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+/*----------              ----------*/
+/*----------    Buttons   ----------*/
+/*----------              ----------*/
 
 .btn:link,
 .btn:visited {
